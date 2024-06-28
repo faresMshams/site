@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000;
+    text-align: center;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-top: 80px; /* Adjust based on the height of your header */
+}
+
+/* Dark mode styles */
+body.night-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.main-nav a:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+}
+
+.top-right-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.top-right-icons a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.top-right-icons img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+}
+
+.top-right-icons a:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.top-right-icons a:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+}
+
+.parallax {
+    background-image: url('background.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.intro-text {
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.5em;
+}
+
+section {
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#skills li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.night-mode #skills li {
+    background-color: #333;
+}
+
+#contact .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact .social-media a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#contact .social-media a:hover {
+    transform: scale(1.1);
+}
+
+#contact .social-media a:active {
+    transform: scale(0.95);
+}
+
+#contact .social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body.night-mode #contact .social-media img {
+    filter: invert(1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
