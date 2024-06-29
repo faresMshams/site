@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Define skill percentages
     const skillPercentages = {
-        "Python": "65%",
-        "Java": "32%",
-        "HTML": "75%",
-        "CSS": "61%",
-        "PHP": "30%",
-        "Visual Basic": "45%",
-        "Linux User": "40%",
-        "Reverse Engineering": "7%"
+        "Python": "90%",
+        "Java": "80%",
+        "HTML": "85%",
+        "CSS": "80%",
+        "PHP": "70%",
+        "Visual Basic": "60%",
+        "Linux User": "95%",
+        "Reverse Engineering": "75%"
     };
 
     // Set percentages for skills
