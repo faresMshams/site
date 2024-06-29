@@ -18,6 +18,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">My Projects</a></li> <!-- Added My Projects link -->
             </ul>
         </nav>
         <div class="top-right-icons">
@@ -35,14 +36,14 @@
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li data-skill="Python">Python <span class="percentage">0%</span></li>
-            <li data-skill="Java">Java <span class="percentage">0%</span></li>
-            <li data-skill="HTML">HTML <span class="percentage">0%</span></li>
-            <li data-skill="CSS">CSS <span class="percentage">0%</span></li>
-            <li data-skill="PHP">PHP <span class="percentage">0%</span></li>
-            <li data-skill="Visual Basic">Visual Basic <span class="percentage">0%</span></li>
-            <li data-skill="Linux User">Linux User <span class="percentage">0%</span></li>
-            <li data-skill="Reverse Engineering">Reverse Engineering <span class="percentage">0%</span></li>
+            <li data-skill="Python">Python <span class="percentage">70%</span></li>
+            <li data-skill="Java">Java <span class="percentage">50%</span></li>
+            <li data-skill="HTML">HTML <span class="percentage">80%</span></li>
+            <li data-skill="CSS">CSS <span class="percentage">70%</span></li>
+            <li data-skill="PHP">PHP <span class="percentage">40%</span></li>
+            <li data-skill="Visual Basic">Visual Basic <span class="percentage">50%</span></li>
+            <li data-skill="Linux User">Linux User <span class="percentage">58%</span></li>
+            <li data-skill="Reverse Engineering">Reverse Engineering <span class="percentage">5%</span></li>
         </ul>        
     </section>
     <section id="about">
@@ -66,5 +67,85 @@
             <a href="https://github.com/mrfa0gh" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
         </div>
     </section>
+    <section id="projects"> <!-- Added Projects section -->
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/mrfa0gh/Telegram-Member-Transfare" target="_blank">
+                    <img src="TG.jpg" alt="Telegram Member Transfare" class="project-image">
+                    Telegram Member Transfare
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/mrfa0gh/Download-YouTube-Playlist-only-Video" target="_blank">
+                    <img src="YT.png" alt="Download YouTube Playlist only Video" class="project-image">
+                    Download YouTube Playlist only Video
+                </a>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>All copyrights to Ghalwash 2024.</p>
+    </footer>
+
+    <style>
+        /* Additional styles */
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+
+        #projects {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #projects h2 {
+            margin-bottom: 20px;
+        }
+
+        #projects ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #projects li {
+            width: 300px;
+            margin: 20px;
+            text-align: left;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        #projects li:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+
+        #projects a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            background-color: #fff;
+        }
+    </style>
 </body>
 </html>
