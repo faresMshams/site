@@ -1,34 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const percentages = document.querySelectorAll(".percentage");
+    const skillItems = document.querySelectorAll("#skills li");
     const nightModeToggle = document.getElementById("night-mode-toggle");
     const contactLink = document.querySelector('a[href="#contact"]');
 
-    // Define skill percentages
+    // تعريف نسب المهارات
     const skillPercentages = {
-        "Python": "90%",
-        "Java": "80%",
-        "HTML": "85%",
-        "CSS": "80%",
-        "PHP": "70%",
-        "Visual Basic": "60%",
-        "Linux User": "95%",
-        "Reverse Engineering": "75%"
+        "Python": "70%",
+        "Java": "50%",
+        "HTML": "80%",
+        "CSS": "70%",
+        "PHP": "40%",
+        "Visual Basic": "50%",
+        "Linux User": "58%",
+        "Reverse Engineering": "5%"
     };
-
-    // Set percentages for skills
-    percentages.forEach(span => {
-        const skillName = span.parentNode.textContent.trim().split(' ')[0];
-        span.textContent = skillPercentages[skillName] || "0%";
+    
+    // تحديث النسب لكل مهارة
+    skillItems.forEach(item => {
+        const skillName = item.getAttribute("data-skill");
+        const percentageSpan = item.querySelector(".percentage");
+        if (skillPercentages.hasOwnProperty(skillName)) {
+            percentageSpan.textContent = skillPercentages[skillName];
+        } else {
+            percentageSpan.textContent = "0%";
+        }
     });
 
-    // Toggle night mode
+    // التبديل بين وضع النهار والليل
     nightModeToggle.addEventListener("click", () => {
         document.body.classList.toggle("night-mode");
     });
 
-    // Handle clicking on contact link
+    // التعامل مع النقر على رابط الاتصال
     contactLink.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent the default behavior of following the link
+        event.preventDefault(); // منع السلوك الافتراضي لمتابعة الرابط
         const contactSection = document.getElementById("contact");
         contactSection.scrollIntoView({ behavior: "smooth" });
     });

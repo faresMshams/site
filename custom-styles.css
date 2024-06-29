@@ -1,0 +1,31 @@
+/* Skill percentages */
+.percentage {
+    font-weight: bold;
+    color: #007bff; /* Blue color for percentages */
+}
+
+/* Dark mode specific styles */
+body.night-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.night-mode header {
+    background-color: #333;
+}
+
+body.night-mode .main-nav a {
+    color: #fff;
+}
+
+body.night-mode .top-right-icons img {
+    filter: invert(1);
+}
+
+body.night-mode #skills li {
+    background-color: #333;
+}
+
+body.night-mode #contact .social-media img {
+    filter: invert(1);
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghalwash - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom-styles.css"> <!-- Include custom styles -->
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -34,15 +35,15 @@
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Python <span class="percentage" data-lang="en">90%</span></li>
-            <li>Java <span class="percentage" data-lang="en">80%</span></li>
-            <li>HTML <span class="percentage" data-lang="en">85%</span></li>
-            <li>CSS <span class="percentage" data-lang="en">80%</span></li>
-            <li>PHP <span class="percentage" data-lang="en">70%</span></li>
-            <li>Visual Basic <span class="percentage" data-lang="en">60%</span></li>
-            <li>Linux User <span class="percentage" data-lang="en">95%</span></li>
-            <li>Reverse Engineering <span class="percentage" data-lang="en">75%</span></li>
-        </ul>
+            <li data-skill="Python">Python <span class="percentage">0%</span></li>
+            <li data-skill="Java">Java <span class="percentage">0%</span></li>
+            <li data-skill="HTML">HTML <span class="percentage">0%</span></li>
+            <li data-skill="CSS">CSS <span class="percentage">0%</span></li>
+            <li data-skill="PHP">PHP <span class="percentage">0%</span></li>
+            <li data-skill="Visual Basic">Visual Basic <span class="percentage">0%</span></li>
+            <li data-skill="Linux User">Linux User <span class="percentage">0%</span></li>
+            <li data-skill="Reverse Engineering">Reverse Engineering <span class="percentage">0%</span></li>
+        </ul>        
     </section>
     <section id="about">
         <h2>About Me</h2>
@@ -65,23 +66,5 @@
             <a href="https://github.com/mrfa0gh" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
         </div>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const nightModeToggle = document.getElementById("night-mode-toggle");
-            const contactLink = document.querySelector('a[href="#contact"]');
-
-            // Toggle night mode
-            nightModeToggle.addEventListener("click", () => {
-                document.body.classList.toggle("night-mode");
-            });
-
-            // Handle clicking on contact link
-            contactLink.addEventListener("click", (event) => {
-                event.preventDefault(); // Prevent the default behavior of following the link
-                const contactSection = document.getElementById("contact");
-                contactSection.scrollIntoView({ behavior: "smooth" });
-            });
-        });
-    </script>
 </body>
 </html>
