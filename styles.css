@@ -207,9 +207,16 @@ body.night-mode #contact .social-media img {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* تكبير حجم الصورة */
+    height: 200px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* إضافة انتقال للتأثير */
+}
+
+.profile-pic:hover {
+    transform: scale(1.2); /* تكبير الصورة عند الوقوف عليها */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* تحسين الظل عند الوقوف */
+    z-index: 1000; /* زيادة مستوى الظهور لتكون فوق العناصر الأخرى */
 }
