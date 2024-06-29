@@ -34,14 +34,14 @@
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Python <span class="percentage" data-lang="en"></span></li>
-            <li>Java <span class="percentage" data-lang="en"></span></li>
-            <li>HTML <span class="percentage" data-lang="en"></span></li>
-            <li>CSS <span class="percentage" data-lang="en"></span></li>
-            <li>PHP <span class="percentage" data-lang="en"></span></li>
-            <li>Visual Basic <span class="percentage" data-lang="en"></span></li>
-            <li>Linux User <span class="percentage" data-lang="en"></span></li>
-            <li>Reverse Engineering <span class="percentage" data-lang="en"></span></li>
+            <li>Python <span class="percentage" data-lang="en">90%</span></li>
+            <li>Java <span class="percentage" data-lang="en">80%</span></li>
+            <li>HTML <span class="percentage" data-lang="en">85%</span></li>
+            <li>CSS <span class="percentage" data-lang="en">80%</span></li>
+            <li>PHP <span class="percentage" data-lang="en">70%</span></li>
+            <li>Visual Basic <span class="percentage" data-lang="en">60%</span></li>
+            <li>Linux User <span class="percentage" data-lang="en">95%</span></li>
+            <li>Reverse Engineering <span class="percentage" data-lang="en">75%</span></li>
         </ul>
     </section>
     <section id="about">
@@ -67,27 +67,8 @@
     </section>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const percentages = document.querySelectorAll(".percentage");
             const nightModeToggle = document.getElementById("night-mode-toggle");
             const contactLink = document.querySelector('a[href="#contact"]');
-
-            // Define skill percentages
-            const skillPercentages = {
-                "Python": "90%",
-                "Java": "80%",
-                "HTML": "85%",
-                "CSS": "80%",
-                "PHP": "70%",
-                "Visual Basic": "60%",
-                "Linux User": "95%",
-                "Reverse Engineering": "75%"
-            };
-
-            // Set percentages for skills
-            percentages.forEach(span => {
-                const skillName = span.parentNode.textContent.trim().split(' ')[0];
-                span.textContent = skillPercentages[skillName] || "0%";
-            });
 
             // Toggle night mode
             nightModeToggle.addEventListener("click", () => {
