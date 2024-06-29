@@ -1,16 +1,69 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تهنئة بعيد ميلادك</title>
+    <title>Ghalwash - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>تهنئة بعيد ميلادك!</h1>
-        <img src="Ghalwash.png" alt="تهنئة بعيد ميلادك">
-        <p>كل عام وأنت بخير!</p>
-    </div>
+    <header>
+        <h1>Ghalwash</h1>
+        <p>CS Student</p>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="top-right-icons">
+            <a href="#contact"><img src="contact-icon.png" alt="Contact"></a>
+            <a href="#" id="night-mode-toggle"><img src="night-mode-icon.png" alt="Night Mode"></a>
+            <a href="https://github.com/mrfa0gh" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+        </div>
+    </header>
+    <section id="intro" class="parallax">
+        <div class="intro-text">
+            <h2>Welcome to My Personal Website</h2>
+            <p>Explore my skills and connect with me!</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python <span class="percentage" data-lang="en"></span></li>
+            <li>Java <span class="percentage" data-lang="en"></span></li>
+            <li>HTML <span class="percentage" data-lang="en"></span></li>
+            <li>CSS <span class="percentage" data-lang="en"></span></li>
+            <li>PHP <span class="percentage" data-lang="en"></span></li>
+            <li>Visual Basic <span class="percentage" data-lang="en"></span></li>
+            <li>Linux User <span class="percentage" data-lang="en"></span></li>
+            <li>Reverse Engineering <span class="percentage" data-lang="en"></span></li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="Ghalwash.png" alt="Ghalwash's Photo" class="profile-pic">
+        <p>Hello, My name is Fares Mohammed</p>
+        <p>My nickname is Ghalwash</p>
+        <p>CS Student, 20 Years Old</p>
+        <p>At this time, I am learning AI, ML, IoT,</p>
+        <p>software engineering, and reverse engineering.</p>
+        <p>I have written more than 6 bots on Telegram and 1 on Discord.</p>
+        <p>I have written more than 25 scripts in Python and 2 websites for now.</p>
+        <p>I have developed 2 apps for Windows with auth gui login using Python.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-media">
+            <a href="https://instagram.com/mrfa0gh" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://t.me/mrfa0gh" target="_blank"><img src="telegram.png" alt="Telegram"></a>
+            <a href="https://twitter.com/mrfa0gh" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://github.com/mrfa0gh" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+        </div>
+    </section>
 </body>
 </html>
