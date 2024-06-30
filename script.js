@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // تعريف نسب المهارات
     const skillPercentages = {
-        "Python": "70%",
-        "Java": "50%",
-        "HTML": "80%",
-        "CSS": "70%",
-        "PHP": "40%",
-        "Visual Basic": "50%",
-        "Linux User": "58%",
-        "Reverse Engineering": "5%"
+        "Python": "64%",
+        "Java": "39%",
+        "HTML": "68%",
+        "CSS": "55%",
+        "PHP": "18%",
+        "Visual Basic": "22%",
+        "Linux User": "43%",
+        "Reverse Engineering": "7%"
     };
     
     // تحديث النسب لكل مهارة
