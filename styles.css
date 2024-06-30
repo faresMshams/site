@@ -220,3 +220,77 @@ body.night-mode #contact .social-media img {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* تحسين الظل عند الوقوف */
     z-index: 1000; /* زيادة مستوى الظهور لتكون فوق العناصر الأخرى */
 }
+
+/* Additional custom styles */
+body.night-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+#projects {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects li {
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#projects li:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+#projects a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
