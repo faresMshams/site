@@ -18,7 +18,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#projects">My Projects</a></li> <!-- Added My Projects link -->
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li> <!-- Added Certifications link -->
             </ul>
         </nav>
         <div class="top-right-icons">
@@ -67,7 +68,7 @@
             <a href="https://github.com/mrfa0gh" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
         </div>
     </section>
-    <section id="projects"> <!-- Added Projects section -->
+    <section id="projects">
         <h2>My Projects</h2>
         <ul>
             <li>
@@ -145,6 +146,18 @@
             color: #333;
             padding: 10px;
             background-color: #fff;
+        }
+
+        /* Dark mode for projects */
+        body.night-mode #projects,
+        body.night-mode #projects li {
+            background-color: #333;
+            color: #e0e0e0;
+        }
+
+        body.night-mode #projects a {
+            background-color: #444;
+            color: #fff;
         }
     </style>
 </body>

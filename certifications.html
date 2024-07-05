@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghalwash - Certifications</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom-styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ghalwash</h1>
+        <p>CS Student</p>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html#intro">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#projects">My Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </nav>
+        <div class="top-right-icons">
+            <a href="index.html#contact"><img src="contact-icon.png" alt="Contact"></a>
+            <a href="#" id="night-mode-toggle"><img src="night-mode-icon.png" alt="Night Mode"></a>
+            <a href="https://github.com/mrfa0gh" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+        </div>
+    </header>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>
+                <img src="certification1.png" alt="Certification 1" class="certification-image">
+                <p>Python for Beginners</p>
+                <div class="certification-buttons">
+                    <button onclick="window.open('https://www.sololearn.com/en/certificates/CT-PIWIZJNV', '_blank')">Open Certification</button>
+                    <button onclick="window.open('https://www.sololearn.com/en/learn/courses/le-python-beginners', '_blank')">Open Course</button>
+                </div>
+            </li>
+            <li>
+                <img src="certification2.png" alt="Certification 2" class="certification-image">
+                <p>Certification Num #2</p>
+            </li>
+            <li>
+                <img src="certification3.png" alt="Certification 3" class="certification-image">
+                <p>Certification Num #3</p>
+            </li>
+            <li>
+                <img src="loading.gif" alt="Certification 4" class="certification-image">
+                <p>Certification Num #4</p>
+            </li>
+            <li>
+                <img src="loading.gif" alt="Certification 5" class="certification-image">
+                <p>Certification Num #5</p>
+            </li>
+            <li>
+                <img src="loading.gif" alt="Certification 6" class="certification-image">
+                <p>Certification Num #6</p>
+            </li>
+            <li>
+                <img src="loading.gif" alt="Certification 7" class="certification-image">
+                <p>Certification Num #7</p>
+            </li>
+            <li>
+                <img src="loading.gif" alt="Certification 8" class="certification-image">
+                <p>Certification Num #8</p>
+            </li>
+            <li>
+                <img src="loading.gif" alt="Certification 9" class="certification-image">
+                <p>Certification Num #9</p>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>All copyrights to Ghalwash 2024.</p>
+    </footer>
+
+    <style>
+        #certifications {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #certifications h2 {
+            margin-bottom: 20px;
+        }
+
+        #certifications ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #certifications li {
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        #certifications li:hover {
+            transform: translateY(-5px);
+        }
+
+        .certification-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .certification-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .certification-buttons button {
+            padding: 5px 10px;
+            border: 2px solid #333;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .certification-buttons button:hover {
+            background-color: #ddd;
+        }
+
+        body.night-mode #certifications,
+        body.night-mode #certifications li {
+            background-color: #333;
+            color: #e0e0e0;
+        }
+
+        body.night-mode .certification-buttons button {
+            background-color: #555;
+            color: #fff;
+            border: 2px solid #e0e0e0;
+        }
+
+        body.night-mode .certification-buttons button:hover {
+            background-color: #666;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+    </style>
+</body>
+</html>

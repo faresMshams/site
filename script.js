@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nightModeToggle = document.getElementById("night-mode-toggle");
     const contactLink = document.querySelector('a[href="#contact"]');
 
-    // تعريف نسب المهارات
+    // Define skill percentages
     const skillPercentages = {
         "Python": "64%",
         "Java": "39%",
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Reverse Engineering": "7%"
     };
     
-    // تحديث النسب لكل مهارة
+    // Update percentages for each skill
     skillItems.forEach(item => {
         const skillName = item.getAttribute("data-skill");
         const percentageSpan = item.querySelector(".percentage");
@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // التبديل بين وضع النهار والليل
+    // Toggle night mode
     nightModeToggle.addEventListener("click", () => {
         document.body.classList.toggle("night-mode");
     });
 
-    // التعامل مع النقر على رابط الاتصال
+    // Smooth scroll to contact section
     contactLink.addEventListener("click", (event) => {
-        event.preventDefault(); // منع السلوك الافتراضي لمتابعة الرابط
+        event.preventDefault(); // Prevent default link behavior
         const contactSection = document.getElementById("contact");
         contactSection.scrollIntoView({ behavior: "smooth" });
     });
