@@ -1,3 +1,4 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Base styles */
@@ -293,4 +294,14 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.8em;
+}
+
+/* Logo styles */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    z-index: 100; /* Ensure logo appears above other content */
 }

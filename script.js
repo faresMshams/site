@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const skillItems = document.querySelectorAll("#skills li");
     const nightModeToggle = document.getElementById("night-mode-toggle");
     const contactLink = document.querySelector('a[href="#contact"]');
+    const logo = document.querySelector(".logo");
+
+    let logoClickCount = 0;
 
     // Define skill percentages
     const skillPercentages = {
@@ -14,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Linux User": "43%",
         "Reverse Engineering": "7%"
     };
-    
+
     // Update percentages for each skill
     skillItems.forEach(item => {
         const skillName = item.getAttribute("data-skill");
@@ -36,5 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault(); // Prevent default link behavior
         const contactSection = document.getElementById("contact");
         contactSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    // Easter egg: Directly redirect to secret login page on logo click
+    logo.addEventListener("click", () => {
+        logoClickCount++;
+        if (logoClickCount === 6) {
+            window.location.href = "secret-login.html"; // Redirect to secret login page
+            logoClickCount = 0; // Reset click count after redirect
+        }
     });
 });
