@@ -49,12 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
             logoClickCount = 0; // Reset click count after redirect
         }
     });
-
-    // Copy text to clipboard automatically on page load
-    const textToCopy = "Visit My Website https://mrfa0gh.line.pm/";
-    navigator.clipboard.writeText(textToCopy).then(function() {
-        console.log("Text copied to clipboard successfully!");
-    }).catch(function(err) {
-        console.error("Failed to copy text: ", err);
-    });
 });
