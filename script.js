@@ -49,4 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
             logoClickCount = 0; // Reset click count after redirect
         }
     });
+
+    // Calculate weeks since the goal
+    const goalDate = new Date('2024-08-06T19:00:00+02:00'); // Replace with the actual date and time
+    const now = new Date();
+    const timeDifference = now - goalDate;
+    const weeksPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 7));
+    
+    // Update the week count display
+    const weekCountElement = document.getElementById("week-count");
+    weekCountElement.textContent = `${weeksPassed} جمعة مضت على هدف ناصر منسي`;
 });

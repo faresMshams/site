@@ -1,0 +1,132 @@
+/* Custom styles */
+body {
+    background-image: url('zm.jpg');
+    background-size: cover; /* لضبط الصورة لتغطية كامل الخلفية */
+    background-position: center; /* لتوسيع الصورة إلى منتصف الصفحة */
+    background-repeat: no-repeat; /* لمنع تكرار الصورة */
+    text-align: right; /* محاذاة النص إلى اليمين */
+    direction: rtl; /* الاتجاه من اليمين لليسار */
+    margin: 0; /* إزالة الهامش الافتراضي */
+    padding: 20px; /* إضافة حشوة للصفحة */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px; /* تعديل الحجم حسب الحاجة */
+    height: auto;
+    z-index: 100; /* لضمان ظهور الشعار فوق المحتوى الآخر */
+}
+
+h1 {
+    color: red; /* لون النص */
+    background-color: white; /* لون الخلفية */
+    padding: 10px; /* إضافة حشوة حول النص */
+    text-align: center; /* محاذاة النص إلى الوسط */
+    margin: 20px 0; /* إضافة مسافة فوق وتحت النص */
+}
+
+#certifications {
+    background-color: rgba(244, 244, 244, 0.8); /* لون خلفية شفاف */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#certifications h2 {
+    margin-bottom: 20px;
+}
+
+#certifications ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* المسافة بين عناصر الشهادات */
+}
+
+#certifications li {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#certifications li:hover {
+    transform: translateY(-5px); /* تأثير الرفع عند التحويم */
+}
+
+.certification-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; /* الزوايا المدورة للصورة */
+}
+
+body.night-mode #certifications,
+body.night-mode #certifications li {
+    background-color: #333; /* خلفية داكنة في وضع الليل */
+    color: #e0e0e0; /* لون النص في وضع الليل */
+}
+
+#projects {
+    background-color: rgba(244, 244, 244, 0.8); /* لون خلفية شفاف */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* المسافة بين عناصر المشاريع */
+}
+
+#projects li {
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#projects li:hover {
+    transform: translateY(-5px); /* تأثير الرفع عند التحويم */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; /* الزوايا المدورة للصورة */
+}
+
+#projects a {
+    display: block;
+    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    color: #333; /* لون النص */
+    padding: 10px;
+    background-color: #fff; /* لون خلفية الرابط */
+}
+
+/* وضع الليل للمشاريع */
+body.night-mode #projects,
+body.night-mode #projects li {
+    background-color: #333; /* خلفية داكنة في وضع الليل */
+    color: #e0e0e0; /* لون النص في وضع الليل */
+}
+
+body.night-mode #projects a {
+    background-color: #444; /* خلفية داكنة للروابط في وضع الليل */
+    color: #fff; /* لون النص للروابط في وضع الليل */
+}

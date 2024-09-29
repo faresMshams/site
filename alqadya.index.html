@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القاضيه</title>
+    <link rel="stylesheet" href="alqadya.css"> <!-- تأكد من المسار صحيح -->
+    <style>
+        body {
+            background-image: url('zm.jpg');
+            background-size: cover; /* لضبط الصورة لتغطية كامل الخلفية */
+            background-position: center; /* لتوسيع الصورة إلى منتصف الصفحة */
+            background-repeat: no-repeat; /* لمنع تكرار الصورة */
+            text-align: right; /* محاذاة النص إلى اليمين */
+            direction: rtl; /* الاتجاه من اليمين لليسار */
+            margin: 0; /* إزالة الهامش الافتراضي */
+            padding: 20px; /* إضافة حشوة للصفحة */
+        }
+
+        h1 {
+            color: red; /* لون النص */
+            background-color: white; /* لون الخلفية */
+            padding: 10px; /* إضافة حشوة حول النص */
+            text-align: center; /* محاذاة النص إلى الوسط */
+            margin: 20px 0; /* إضافة مسافة فوق وتحت النص */
+        }
+
+        #timer {
+            background-color: white; /* لون الخلفية للعداد */
+            padding: 15px; /* إضافة حشوة حول العد التنازلي */
+            border-radius: 8px; /* زوايا مدورة للمربع */
+            text-align: center; /* محاذاة النص إلى الوسط */
+            margin: 20px 0; /* إضافة مسافة فوق وتحت العداد */
+        }
+
+        #countdown {
+            display: flex;
+            justify-content: center; /* محاذاة العناصر إلى الوسط */
+            gap: 5px; /* إضافة مسافة بين الأرقام والكلمات */
+        }
+
+        .video-container {
+            margin-top: 20px; /* مسافة فوق الفيديو */
+            width: 100%; /* عرض الحاوية 100% */
+            max-width: 800px; /* أقصى عرض للحاوية */
+            height: auto; /* ارتفاع تلقائي */
+            overflow: hidden; /* إخفاء أي محتوى زائد */
+            margin-left: auto; /* محاذاة الفيديو للوسط */
+            margin-right: auto; /* محاذاة الفيديو للوسط */
+        }
+
+        iframe {
+            width: 100%; /* عرض الفيديو بنسبة 100% */
+            height: 450px; /* ارتفاع الفيديو */
+            border: none; /* إزالة الحدود */
+        }
+    </style>
+</head>
+<body>
+    <h1>القاضيه</h1>
+    <div id="timer">
+        <p>كم جمعة مرت منذ هدف ناصر منسي في السوبر الأفريقي على حساب الأهلي؟</p>
+        <p id="countdown"></p>
+    </div>
+
+    <!-- تضمين الفيديو من Facebook -->
+    <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=1512061129670796" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+    </div>
+
+    <script src="alqadya.js" defer></script>
+    <script>
+        const matchDate = new Date("2024-09-27T17:00:00+02:00"); // تاريخ القضية بتوقيت مصر
+        const countdown = document.getElementById("countdown");
+
+        function updateTimer() {
+            const now = new Date();
+            const timeDiff = now - matchDate;
+
+            const seconds = Math.floor(timeDiff / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const hours = Math.floor(minutes / 60);
+            const days = Math.floor(hours / 24);
+            const weeks = Math.floor(days / 7);
+
+            const remainingDays = days % 7;
+
+            // تحديث النص ليظهر الرقم على اليمين والكلمات على اليسار
+            countdown.innerHTML = `${weeks} <span>جمعة</span>، ${remainingDays} <span>يوم</span>، ${hours % 24} <span>ساعة</span>، ${minutes % 60} <span>دقيقة</span>، ${seconds % 60} <span>ثانية</span>`;
+        }
+
+        setInterval(updateTimer, 1000); // تحديث العداد كل ثانية
+        updateTimer(); // تحديث العداد عند تحميل الصفحة
+    </script>
+</body>
+</html>
