@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEI Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="imei.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>IMEI Checker</h1>
+        <nav>
+            <a href="index.html">Main Website</a>
+            <a href="imei.html">IMEI</a>
+        </nav>
+    </header>
+    <main>
+        <section id="imei-checker">
+            <h2>Check IMEI</h2>
+            <form id="imei-form">
+                <label for="imei-input">Enter IMEI Number:</label>
+                <input type="text" id="imei-input" name="imei" maxlength="15" required>
+                <div class="buttons">
+                    <button type="button" id="search-btn">Search</button>
+                    <button type="button" id="scan-btn">Scan</button>
+                </div>
+            </form>
+            <div id="result">
+                <h3>Result:</h3>
+                <pre id="result-output">No results yet.</pre>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
